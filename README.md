@@ -5,9 +5,9 @@ But unfortunately I was realy bad. Like really. I had nothing else to do beside 
 Thus I wrote a `python` program wich should play for me and master the game.
 
 ## Security Alert
-On 19. of April Github opend a security alert concerning an urllib3 vulnerability:
-**Vulnerable versions: < 1.24.2**
-**Patched version: 1.24.2**
+On 19. of April Github opend a security alert concerning an urllib3 vulnerability:<br>
+**Vulnerable versions: < 1.24.2**<br>
+**Patched version: 1.24.2**<br>
 The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the ssl_context, ca_certs, or ca_certs_dir argument.
 
 Hence I changed the urllib version to `urllib3>=1.24.2`.
