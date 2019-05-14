@@ -49,3 +49,6 @@ six==1.12.0
 tldextract==2.2.0
 urllib3>=1.24.2
 ```
+Ater installing the requirements you migth get the following error:
+`selenium.common.exceptions.WebDriverException: Message: 'geckodriver' executable needs to be in PATH.`
+Have a look at this StackOverflow question/answer ([Selenium using Python - Geckodriver executable needs to be in PATH ](https://stackoverflow.com/questions/40208051/selenium-using-python-geckodriver-executable-needs-to-be-in-path?answertab=votes#tab-top)) for further information and solution.
