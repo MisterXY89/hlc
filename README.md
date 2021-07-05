@@ -4,14 +4,6 @@ A few days ago I stumbled upon the [HigherLower Game](https://www.higherlowergam
 But unfortunately I was realy bad. Like really. I had nothing else to do beside learning and assignments for uni. So basically a lot of free time (*nervous laugh*). 
 Thus I wrote a `python` program wich should play for me and master the game.
 
-## Security Alert
-On 19. of April Github opend a security alert concerning an urllib3 vulnerability:<br>
-**Vulnerable versions: < 1.24.2**<br>
-**Patched version: 1.24.2**<br>
-The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the ssl_context, ca_certs, or ca_certs_dir argument.
-
-Hence I changed the urllib version to `urllib3>=1.24.2`.
-
 ## Approach
 Since the game is a purly `javascript` generated website with only `javascript` links I went went with Selenium. Selenium is a suite of tools specifically for automating web browsers. For more informations: [www.seleniumhq.org](https://www.seleniumhq.org/).
 For the sake of simplicity, the program learns all values by try and error. It reads the terms and their values and stores them in a dictionary. 
